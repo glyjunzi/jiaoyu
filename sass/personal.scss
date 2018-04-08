@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.guanli{
+  a:hover blue;
+}
+.content11{
+  margin-top: 15px;
+  font-size: 20px;
+  border-left: 5px #1E9FFF solid;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.layui-input-block{
+  width:500px;
+}
+
+.layui-input-block {
+  margin-left: 110px;
+  min-height: 36px;
+}
+.layui-input-block, .layui-input-inline {
+  position: relative;
+}
+.label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#label {
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: url(../images/icons/tianjiaGN.svg) no-repeat 30px 30px;
+  background-size: auto auto;
+  background-size: 100px 100px;
+  text-align: center;
+  vertical-align: bottom;
+  border: 1px solid #E6E6E6;
+  cursor: pointer;
+}
+#file {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.layui-footer{
+  text-align: center;
+  p{
+    line-height: 22px;
+    color: #999;
+  }
+}

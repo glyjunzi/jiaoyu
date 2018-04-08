@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>天智教师考评</title>
+    <link rel="stylesheet" href="layui/layui/css/layui.css">
+    <link rel="stylesheet" href="css/users.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header" style="background-color: #1E9FFF">
+        <div class="layui-logo"><img src="img/logo_nav.png"></div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">苏州天智软件学院中国IT培训专家</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="img/chrome.png" class="layui-nav-img">
+                    admin
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">密码修改</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item ">
+                    <a class="" href="javascript:;">考评管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="uncheck.html">未审查询</a></dd>
+                        <dd><a href="check.html">已审查询</a></dd>
+                        <dd><a href="testlist11.html">考评列表</a></dd>
+                        <dd><a href="plate.html">考评模板</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">班级管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="classadd.html">新增班级</a></dd>
+                        <dd><a href="classfix.html">修改班级</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">统计分析</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="month.html">按月统计</a></dd>
+                        <dd><a href="javascript:;">按季统计</a></dd>
+                        <dd><a href="year.html">按年统计</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;">用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="users.html">用户列表</a></dd>
+                        <dd><a href="userPermission.html">角色权限</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">个人中心</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="personal.html">个人信息</a></dd>
+                        <dd><a href="pwdmod.html">修改密码</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;"><a href class="guanli">个人中心</a><a href><span style="margin-left: 15px;color: gray;">个人信息</span></a></div>
+        <div class="content1">
+            <div class="content11">找到7条记录</div>
+            <hr>
+            <form class="layui-form" action="">
+                <div class="layui-form-item1">
+                    <label class="layui-form-label">姓名：</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item2">
+                    <label class="layui-form-label">角色：</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">--</option>
+                            <option value="0">java</option>
+                            <option value="1">fed</option>
+                            <option value="2">fullstack</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item3">
+                    <label class="layui-form-label">状态：</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">--</option>
+                            <option value="0">启用</option>
+                            <option value="1">禁用</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item4">
+                    <div class="layui-input-block">
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">查询</button>
+                    </div>
+                </div>
+            </form>
+            <div class="content2">
+                <table class="layui-table" style="color: black;">
+                    <colgroup>
+                        <col width="120">
+                        <col width="150">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox" id="quanxuan" value="全选" />全选</th>
+                        <th>姓名</th>
+                        <th>职位</th>
+                        <th>电话</th>
+                        <th>邮箱</th>
+                        <th>角色</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="checkbox"  class="danxuan"/></td>
+                        <td>jack</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>steve</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>helen</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>steven</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>jonh</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>joe</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="danxuan"/></td>
+                        <td>york</td>
+                        <td>讲师</td>
+                        <td>13866668888</td>
+                        <td>666@qq.com</td>
+                        <td>管理员</td>
+                        <td>禁用</td>
+                        <td><a href style="color: blue;">预览</a><span style="margin-left: 10px"><a href style="color: blue;">修改</a></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo" style="margin-left: -110px">启用</button>
+                    <button type="reset" class="layui-btn layui-btn-primary layui-btn-danger">禁用</button>
+                    <button class="layui-btn layui-btn-normal layui-btn-danger" lay-submit lay-filter="formDemo">重置密码</button>
+                    <a href><button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo" style="margin-left: 10px">新增用户</button></a>
+                    <div id="demo3">
+                        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                            <legend>自定义首页、尾页、上一页、下一页文本</legend>
+                        </fieldset>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="test1"></div>
+        </div>
+    </div>
+
+    <div class="layui-footer" style="color: #888;">
+        <p>©天创集团（中国）2017 版权所有</p>
+        <p>TianZhi Education Student Feedback Sysytem | 天智教育学院反馈系统 | 2009-2020</p>
+    </div>
+</div>
+<script src="layui/layui/layui.all.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+//        element.render({
+//            elem: 'test1'
+//            ,count: 70 //数据总数，从服务端得到
+//            ,jump: function(obj, first){
+//                //obj包含了当前分页的所有参数，比如：
+//                console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+//                console.log(obj.limit); //得到每页显示的条数
+//
+//                //首次不执行
+//                if(!first){
+//                    //do something
+//                }
+//            }
+//        });
+//    });
+//    window.onload=function(){
+//        var CheckAll=document.getElementById('All');
+//        var UnCheck=document.getElementById('All');
+//        //var div=document.getElementById('div');
+//        var CheckBox=document.getElementsByTagName('input');
+//
+//        CheckAll.onclick=function(){
+//            for(i=0;i<CheckBox.length;i++){
+//                CheckBox[i].checked=true;
+//            };
+//        };
+//
+//        UnCheck.onclick=function(){
+//            for(i=0;i<CheckBox.length;i++){
+//                CheckBox[i].checked=false;
+//            };
+//        };
+//
+//    };
+</script>
+<script>
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'demo3'
+            ,count: 100
+            ,first: '首页'
+            ,last: '尾页'
+            ,prev: '<em>上一页</em>'
+            ,next: '<em>下一页</em>'
+        });
+    });
+</script>
+<script>
+    //全选操作
+    $('#quanxuan').change(function(){
+        if($('#quanxuan').prop('checked')){
+            for(var i = 0 ; i<$('.danxuan').length ;i++){
+                $('.danxuan').eq(i).prop("checked", true);
+            }
+        }else{
+            for(var i = 0 ; i<$('.danxuan').length ;i++){
+                $('.danxuan').eq(i).prop("checked", false);
+            }
+        }
+    })
+</script>
+</body>
+
+</html>

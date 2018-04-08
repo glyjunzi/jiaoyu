@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.content1 {
+  background-color: #FFFFFF;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.content11 {
+  font-size: 20px;
+  border-left: 5px #1E9FFF solid;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px; }
+
+.layui-form-item1 {
+  display: inline-block;
+  width: 200px;
+  float: left; }
+
+.layui-form-item2 {
+  display: inline-block;
+  width: 200px;
+  float: left; }
+
+.layui-form-item3 {
+  display: inline-block;
+  width: 200px;
+  float: left; }
+
+.layui-form-item4 {
+  display: inline-block;
+  width: 200px;
+  float: left; }
+
+.layui-table {
+  margin-top: 15px; }
+
+.content2 {
+  margin-top: 60px; }
+
+.layui-footer {
+  text-align: center; }
+  .layui-footer p {
+    line-height: 22px;
+    color: #999; }
+
+#demo3 {
+  float: right; }
+  #demo3 .layui-laypage-em {
+    background: #1c7beb; }

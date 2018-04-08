@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>天智教师考评</title>
+    <link rel="stylesheet" href="layui/layui/css/layui.css">
+    <link rel="stylesheet" href="css/clear.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header" style="background-color: #1E9FFF">
+        <div class="layui-logo"><img src="img/logo_nav.png"></div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">苏州天智软件学院中国IT培训专家</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="img/chrome.png" class="layui-nav-img">
+                    admin
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">密码修改</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+        </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">考评管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="uncheck.html">未审查询</a></dd>
+                        <dd><a href="check.html">已审查询</a></dd>
+                        <dd><a href="testlist.html">考评列表</a></dd>
+                        <dd><a href="plate.html">考评模板</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">班级管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="classadd.html">新增班级</a></dd>
+                        <dd><a href="classfix.html">修改班级</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">统计分析</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="month.html">按月统计</a></dd>
+                        <dd><a href="javascript:;">按季统计</a></dd>
+                        <dd><a href="year.html">按年统计</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">用户管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="users.html">用户列表</a></dd>
+                        <dd><a href="userPermission.html">角色权限</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">个人中心</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="personal.html">个人信息</a></dd>
+                        <dd><a href="pwdmod.html">修改密码</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">
+            <div><a href><<返回未审查询</a></div>
+            <div class="content1">
+                <div class="content11">概要信息</div>
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col width="200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>教员:ABC</th>
+                        <th>班级:JSD1708</th>
+                        <th>调查开始时间:2017-08-09</th>
+                        <th>调查结束时间:2017-08-10</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>状态：<span class="span1">未审</span></td>
+                        <td>总份数:8</td>
+                        <td>有效分数:5</td>
+                        <td>平均分:4.8</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content2">
+                <div class="content11">详细信息</div>
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col width="200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>班级管理</th>
+                        <th>讲师管理</th>
+                        <th>是否无效</th>
+                        <th>评分信息</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>gooooooood</td>
+                        <td>niceeeeeee</td>
+                        <td><input type="checkbox"  lay-skin="primary"  class="body1"><span class="body2">有效</span></td>
+                        <td><span class="body3"></span>平均分5.0</td>
+                        <td><a href>查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>gooooooood</td>
+                        <td>niceeeeeee</td>
+                        <td><input type="checkbox" lay-skin="primary" class="body1"><span class="body2">有效</span></td>
+                        <td><span class="body3"></span>平均分5.0</td>
+                        <td><a href>查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>gooooooood</td>
+                        <td>niceeeeeee</td>
+                        <td><input type="checkbox" name="" title="写作" lay-skin="primary" class="body1"><span class="body2">有效</span></td>
+                        <td><span class="body3"></span>平均分5.0</td>
+                        <td><a href>查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>gooooooood</td>
+                        <td>niceeeeeee</td>
+                        <td><input type="checkbox" name="" title="写作" lay-skin="primary" class="body1"><span class="body2">有效</span></td>
+                        <td><span class="body3"></span>平均分5.0</td>
+                        <td><a href>查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>gooooooood</td>
+                        <td>niceeeeeee</td>
+                        <td><input type="checkbox" name="" title="写作" lay-skin="primary" class="body1"><span class="body2">有效</span></td>
+                        <td><span class="body3"></span>平均分5.0</td>
+                        <td><a href>查看</a></td>
+                    </tr>
+                    </tbody>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="layui-footer" style="color: #888;">
+        ©天创集团（中国）2017 版权所有<br />
+        TianZhi Education Student Feedback Sysytem | 天智教育学院反馈系统 | 2009-2020
+    </div>
+</div>
+<script src="layui/layui/layui.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+</script>
+<script>
+    var body1 = document.querySelectorAll('.body1')
+    var body2 = document.querySelectorAll('.body2')
+    var body3 = document.querySelectorAll('.body3')
+
+    for(var i=0;i<body1.length;i++){
+        if(body1[i].checked){
+            body2[i].innertext = '无效';
+            body3[i].style.backgroundColor = 'red'
+        }else{
+            body2[i].innertext = '有效';
+            body3[i].style.backgroundColor = '#75ABE9'
+        }
+    }
+
+    for(var i=0;i<body1.length;i++){
+        (function(i){
+            body1[i].onchange = function(i){
+                console.log(body1[i],body2[i])
+                if(body1[i].checked){
+                    body2[i].innertext = '无效';
+                    body3[i].style.backgroundColor = 'red'
+                }else{
+                    body2[i].innertext = '有效';
+                    body3[i].style.backgroundColor = '#75ABE9'
+                }
+            }
+        })(i)
+    }
+
+
+</script>
+</body>
+
+</html>

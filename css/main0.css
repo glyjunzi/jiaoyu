@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  background: url("../img/login_bg.png"); }
+
+.a {
+  height: 100px;
+  text-align: center; }
+
+.photo {
+  float: left;
+  margin-left: 48vw; }
+
+.system1 {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  float: left;
+  height: 30px; }
+
+.system2 {
+  float: left;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  height: 20px;
+  font-weight: bold;
+  margin-top: 60px; }

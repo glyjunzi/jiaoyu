@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.content11 {
+  margin-top: 15px;
+  font-size: 20px;
+  border-left: 3px blue solid;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px; }
+
+.layui-btn {
+  margin-left: 500px; }

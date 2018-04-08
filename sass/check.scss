@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+.content11{
+  font-size: 20px;
+  border-left: 3px #1E9FFF solid;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+.content12{
+  display: inline-block;
+  height:25px;
+  margin-left: 730px;
+}
+.content13{
+  height:25px;
+  width:50px;
+  margin-right: 50px;
+  background-color: #1E9FFF;
+  color: white;
+}
+.btn{
+  width: 50px;
+  background: #1E9FFF;
+  color: white;
+}
+#demo3{
+  float: right;
+  .layui-laypage-em{
+    background: #1c7beb;
+  }
+}
+.layui-footer{
+  text-align: center;
+  p{
+    line-height: 22px;
+    color: #999;
+  }
+}

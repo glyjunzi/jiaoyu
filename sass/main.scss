@@ -1,0 +1,19 @@
+$maincolor:#009926;
+$font16:36px;
+.a{
+
+  height: 600px;
+  background: yellowgreen;
+
+  .d{
+    .e{
+      font-size: $font16;
+      width: 400px;
+      height: 200px;
+      background: $maincolor;
+    }
+  }
+  .f{
+    font-size: $font16;
+  }
+}

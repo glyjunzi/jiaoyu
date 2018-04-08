@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <p>
+        用户名：<input id="username" type="text">
+    </p>
+    <p>
+        密码：<input id="pwd" type="password">
+    </p>
+    <p>
+        手机号：<input id="tel" type="text">
+    </p>
+    <p>
+        地址：<input id="addr" type="text">
+    </p>
+    <p>
+        <button>注 册</button>
+    </p>
+</body>
+<script>
+    $('button').click(function(){
+        $.ajax({
+            method:"post",
+            url:"/register",
+            dataType:"json",
+            async:true,
+            data:{
+                username:$("#username").val(),
+                pwd:$("#pwd").val(),
+                tel:$("#tel").val(),
+                addr:$("#addr").val()
+            },
+            success:function(res){
+                console.log(res)
+            }
+        })
+    })
+
+
+</script>
+</html>
